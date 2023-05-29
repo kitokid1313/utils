@@ -1,3 +1,3 @@
-module gitlab.com/r_d2/services/utils
+module github.com/kitokid1313/utils
 
 go 1.20
