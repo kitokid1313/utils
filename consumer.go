@@ -48,7 +48,7 @@ func (c *RabbitMQConsumer) Consumer(callback CallbackFunc, args ...interface{}) 
 
 	go func() {
 		for d := range msgs {
-			args = append(args, d)
+			args = append(args, d.Body)
 			callback(args...)
 
 		}
